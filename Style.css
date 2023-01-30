@@ -14,4 +14,37 @@
 
 body {
   font-family: "League Spartan", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  display: flex;
+  height: 70%;
+}
+
+.hero .image-section {
+  width: 60%;
+  background-image: url("images/desktop-image-hero-1.jpg");
+  background-size: cover;
+}
+
+.hero .image-section .navbar {
+  display: flex;
+}
+
+.hero .image-section .navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.hero .text-section {
+  width: 40%;
+}
+
+.about {
+  height: 30%;
+  display: flex;
 }
