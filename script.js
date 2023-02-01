@@ -73,3 +73,20 @@ previous.addEventListener("click", () => {
    console.log(currentText, currentImage);
    image.style.backgroundImage = `url(images/desktop-image-hero-${currentImage}.jpg)`;
 });
+
+//mobile
+
+const body = document.querySelector("body");
+const hero = document.querySelector(".hero");
+const hamburgerIcon = document.querySelector(".icon-hamburger");
+const closeIcon = document.querySelector(".icon-close");
+
+hamburgerIcon.addEventListener("click", () => {
+   hero.classList.add("show-nav");
+   body.style.paddingTop = "7rem";
+});
+
+closeIcon.addEventListener("click", () => {
+   hero.classList.remove("show-nav");
+   body.style.paddingTop = "0rem";
+});

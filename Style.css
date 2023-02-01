@@ -30,7 +30,10 @@ body {
    padding: 3rem;
    background-image: url("images/desktop-image-hero-1.jpg");
    background-size: cover;
-   transition: 1;
+}
+.hero .image-section .icon-hamburger,
+.hero .image-section .icon-close {
+   display: none;
 }
 
 .hero .image-section .navbar {
@@ -178,5 +181,145 @@ body {
 
    .hero .text-section .buttons button:hover {
       background-color: var(--Very-Dark-Gray);
+   }
+}
+
+@media (max-width: 1120px) {
+   body {
+      width: 100%;
+      height: 100vh;
+   }
+
+   .hero .image-section {
+      width: 50%;
+   }
+
+   .hero .text-section {
+      width: 50%;
+   }
+}
+
+@media (max-width: 945px) {
+   body {
+      width: 100%;
+      height: auto;
+   }
+
+   .hero {
+      width: 100%;
+      flex-direction: column;
+   }
+
+   .hero .image-section {
+      width: 100%;
+      height: 30rem;
+   }
+
+   .hero .text-section {
+      width: 100%;
+      padding: 4rem;
+   }
+
+   .hero .text-section .buttons {
+      top: calc(0% - 3rem);
+      left: calc(100% - 7rem);
+   }
+}
+
+@media (max-width: 770px) {
+   .hero .image-section {
+      width: 100%;
+      height: 25rem;
+   }
+
+   .about {
+      height: auto;
+      flex-direction: column;
+   }
+
+   .about img {
+      width: 100%;
+   }
+
+   .about .about-text {
+      width: 100%;
+      padding: 3rem 2rem;
+   }
+}
+
+@media (max-width: 650px) {
+   .hero .image-section {
+      width: 100%;
+      height: 20rem;
+   }
+}
+
+@media (max-width: 520px) {
+   .hero .image-section {
+      width: 100%;
+      height: 15rem;
+   }
+}
+
+@media (max-width: 450px) {
+   .hero .image-section {
+      padding: 3rem 1rem;
+   }
+
+   .hero.show-nav .image-section {
+      padding: 0;
+      position: relative;
+   }
+
+   .hero.show-nav .image-section .logo {
+      display: none;
+   }
+
+   .hero .image-section .icon-hamburger {
+      display: block;
+   }
+
+   .hero.show-nav .image-section .icon-hamburger {
+      display: none;
+   }
+
+   .hero.show-nav .image-section .icon-close {
+      display: block;
+   }
+
+   .hero .image-section .navbar {
+      justify-content: flex-start;
+      column-gap: 8rem;
+   }
+
+   .hero.show-nav .image-section .navbar {
+      position: absolute;
+      width: 100%;
+      padding: 3rem 0;
+      column-gap: 2.5rem;
+      justify-content: center;
+      background-color: var(--White);
+      top: -45%;
+   }
+
+   .hero .image-section .navbar ul {
+      display: none;
+   }
+
+   .hero.show-nav .image-section .navbar ul {
+      display: flex;
+   }
+
+   .hero.show-nav .image-section .navbar ul li {
+      color: var(--Black);
+      font-weight: 700;
+   }
+
+   .hero .text-section {
+      padding: 3rem 2rem;
+   }
+
+   .hero .text-section .all-texts h2 {
+      font-size: 2rem;
    }
 }
